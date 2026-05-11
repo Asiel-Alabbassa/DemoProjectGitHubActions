@@ -21,5 +21,5 @@ test('test', async ({ page }) => {
  await expect(page.getByRole('heading')).toHaveText('Asiel article');
  await expect(page.locator('.tag-list li')).toHaveText('tag entered');
  await page.getByRole('button', { name: 'Delete Article' }).nth(1).click();
- await page.getByRole('button', { name: ' Delete Article' }).nth(1).click();  
+  
 });
