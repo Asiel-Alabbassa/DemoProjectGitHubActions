@@ -18,7 +18,7 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Enter tags' }).fill('tag entered');
   await page.getByRole('textbox', { name: 'Enter tags' }).press('Enter');
   await page.getByRole('button', { name: 'Publish Article' }).click();
- await expect(page.getByRole('heading')).toHaveText('Asiel article');
+ await expect(page.getByRole('heading')).toHaveText('Asiel article xxxx');
  await expect(page.locator('.tag-list li')).toHaveText('tag entered');
  await page.getByRole('button', { name: 'Delete Article' }).nth(1).click();
   
